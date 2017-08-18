@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.05">
+
+        <EditText
+            android:id="@+id/euname"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:layout_weight="0.05"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:hint="Enter username"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/epass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/euname"
+            android:layout_alignLeft="@+id/euname"
+            android:layout_alignRight="@+id/euname"
+            android:layout_alignStart="@+id/euname"
+            android:layout_below="@+id/euname"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:padding="7dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/epass"
+            android:layout_alignRight="@+id/epass"
+            android:layout_below="@+id/epass"
+            android:layout_marginTop="97dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/euname"
+            android:layout_alignLeft="@+id/login"
+            android:layout_alignRight="@+id/euname"
+            android:layout_alignStart="@+id/login"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="24dp"
+            android:layout_weight="0.02"
+            android:text="Register" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
